@@ -1,6 +1,9 @@
 
 package Modelo;
 
+
+import java.util.Date;
+
 public class Modelo {
     //Campos de la tabla Registro Cliente//
     private int id_Cliente;
@@ -15,14 +18,14 @@ public class Modelo {
     private String Vendedor_Apellido;
     private float Vendedor_Comision;
     private int Vendedor_Sucursal_id;
-    private datetime Fecha_de_Contrato;
+    private Date Fecha_de_Contrato;
     //**Campos de la tabla Oportunidad//
     private int id_Oportunidad;
     private String Oportunidad;
     //**Campos de la tabla evento**//
     private int Id_Eventos;
     private int Eventos_Tipo_Id;
-    private date Evento_Fecha;
+    private Date Evento_Fecha;
     private int  Evento_Cantidad_Asistentes;
     private int Evento_Menu_Id;
     private int Evento_Local_Id;
@@ -134,11 +137,11 @@ public class Modelo {
         this.Vendedor_Sucursal_id = Vendedor_Sucursal_id;
     }
 
-    public datetime getFecha_de_Contrato() {
+    public Date getFecha_de_Contrato() {
         return Fecha_de_Contrato;
     }
 
-    public void setFecha_de_Contrato(datetime Fecha_de_Contrato) {
+    public void setFecha_de_Contrato(Date Fecha_de_Contrato) {
         this.Fecha_de_Contrato = Fecha_de_Contrato;
     }
 
@@ -174,11 +177,11 @@ public class Modelo {
         this.Eventos_Tipo_Id = Eventos_Tipo_Id;
     }
 
-    public date getEvento_Fecha() {
+    public Date getEvento_Fecha() {
         return Evento_Fecha;
     }
 
-    public void setEvento_Fecha(date Evento_Fecha) {
+    public void setEvento_Fecha(Date Evento_Fecha) {
         this.Evento_Fecha = Evento_Fecha;
     }
 
